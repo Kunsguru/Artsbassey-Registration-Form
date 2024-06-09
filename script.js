@@ -71,3 +71,4 @@ const adminPassword = '1234'; // Set your admin password here
 
         // Display all students when the page loads
         document.addEventListener('DOMContentLoaded', displayAllStudents);
+
