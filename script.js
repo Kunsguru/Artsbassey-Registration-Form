@@ -30,7 +30,7 @@ const adminPassword = '1234'; // Set your admin password here
         function displayRegisteredStudent(student, index) {
             const registeredStudents = document.getElementById('registeredStudents');
             const listItem = document.createElement('li');
-            listItem.innerHTML = `<span>Name: ${student.name}, Email: ${student.email}, Phone: ${student.phone} ${student.tag ? '(' + student.tag + ')' : ''}</span>
+            listItem.innerHTML = `<span>Name: ${student.name}, Email: ${student.email}, Phone: ${student.phone}, Plan: ${student.plan} ${student.tag ? '(' + student.tag + ')' : ''}</span>
                 <button class="tag-button" onclick="tagStudent(${index}, 'older')">Tag Older</button>
                 <button class="tag-button" onclick="tagStudent(${index}, 'newer')">Tag Newer</button>
                 <button class="remove-button" onclick="removeStudent(${index})">Remove</button>`;
@@ -68,6 +68,10 @@ const adminPassword = '1234'; // Set your admin password here
             saveStudents();
             displayAllStudents();
         }
+
+        document.getElementById('homeButton').addEventListener('click', function() {
+            window.location.href = 'https://artswithartsybasy0.onrender.com/'; // Adjust the URL to the correct path for your home page
+        });
 
         // Display all students when the page loads
         document.addEventListener('DOMContentLoaded', displayAllStudents);
