@@ -91,7 +91,8 @@ body {
 
         .tag-button, .remove-button {
             padding: 5px 10px;
-            margin-left: 5px;
+            margin-left: -15px;
+            margin-top: -65px;
             border: none;
             cursor: pointer;
         }
@@ -114,4 +115,16 @@ body {
             background-color: #ff1c1c;
         }
 
+        .home-button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #FFA500;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .home-button:hover {
+            background-color: #FF8C00;
+        }
 
