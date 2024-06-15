@@ -1,11 +1,16 @@
 document.getElementById('summitButton').addEventListener('click', function() {
-    var email = 'artsbasseyartsbassey@gmail.com';
-    var subject = 'Contact Us';
-    var body = 'Hello,\n\nI would like to make an inquiry more about the artswithartsybasy.\n\nThank you.';
-    
-    var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    
-    window.location.href = mailtoLink;
-});
+            document.getElementById('emailForm').classList.remove('hidden');
+        });
 
+        document.getElementById('sendEmailButton').addEventListener('click', function() {
+            var email = 'artsbasseyartsbassey@gmail.com';
+            var subject = 'Help Desk';
+            var userMessage = document.getElementById('userMessage').value;
+            var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(userMessage);
+            
+            window.location.href = mailtoLink;
+        });
 
+        document.getElementById("homeButton").onclick = function() {
+            window.location.href = "https://aaartswithartsbasy2024.onrender.com/";
+        }
