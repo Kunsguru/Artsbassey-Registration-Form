@@ -4,7 +4,7 @@ document.getElementById('summitButton').addEventListener('click', function() {
 
         document.getElementById('sendEmailButton').addEventListener('click', function() {
             var email = 'artsbasseyartsbassey@gmail.com';
-            var subject = 'Help Desk';
+            var subject = 'Contest Registration';
             var userMessage = document.getElementById('userMessage').value;
             var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(userMessage);
             
